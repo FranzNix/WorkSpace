@@ -11,7 +11,7 @@ public class HangmanProper {
 		Scanner sc = new Scanner(System.in);
 		
 		//Tells user to guess a letter	
-		while (count < 6 && emptySpaces.contains("_")) {
+		while (count < 6 && emptySpaces.contains(" _ ")) {
 			System.out.println("Guess any letter in the word.");
 			System.out.println(emptySpaces);	
 			String guess = sc.next();
@@ -22,7 +22,7 @@ public class HangmanProper {
 	}//end main
 	
 	public static void hang(String guess) {
-		String newEmptySpace = "_";
+		String newEmptySpace = " _ ";
 		for(int i = 0; i < word.length(); i++) {
 			if(word.charAt(i) == guess.charAt(0)) {
 				newEmptySpace += guess.charAt(0);
@@ -65,7 +65,7 @@ public class HangmanProper {
 			System.out.println("----------------");
 			System.out.println("        |        ");
 			System.out.println("       O       ");
-			System.out.println("     /  |""\"   );
+			System.out.println("     // | \\     ");
 
 		}
 		if (count == 5) {
@@ -73,20 +73,17 @@ public class HangmanProper {
 			System.out.println("----------------");
 			System.out.println("        |        ");
 			System.out.println("       O       ");
-			System.out.println("     /  |  \     ");
+			System.out.println("    //  |  \\    ");
 			System.out.println("        |        ");
 		}
 		if (count == 6) {
 			System.out.println("Wrong guess, try again");
-			System.out.println("   ____________");
-			System.out.println("   |          _|_");
-			System.out.println("   |         /   \\");
-			System.out.println("   |        |     |");
-			System.out.println("   |         \\_ _/");
-			System.out.println("   |           |");
-			System.out.println("   |           |");
-			System.out.println("   |          / \\ ");
-			System.out.println("___|___      /   \\");
+			System.out.println("----------------");
+			System.out.println("        |        ");
+			System.out.println("       O       ");
+			System.out.println("    //  |  \\    ");
+			System.out.println("        |        ");
+			System.out.println("      // \\      ");
 			System.out.println("GAME OVER! The word was " + word);
 		}
 	}//end Image
