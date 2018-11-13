@@ -22,7 +22,7 @@ public class HangmanProper {
 	}//end main
 	
 	public static void hang(String guess) {
-		String newEmptySpace = " _ ";
+		String newEmptySpace = "_";
 		for(int i = 0; i < word.length(); i++) {
 			if(word.charAt(i) == guess.charAt(0)) {
 				newEmptySpace += guess.charAt(0);
