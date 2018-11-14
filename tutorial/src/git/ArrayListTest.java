@@ -27,8 +27,8 @@ public class ArrayListTest {
 			System.out.println(listOfInts.get(i));
 			}//end for
 		
-		
-			
+		System.out.println(listOfInts.indexOf(98));
+		System.out.println(listOfInts.indexOf(99));
 		
 		
 	}//end main
