@@ -20,11 +20,12 @@ public class DS6 {
 		allSongs.add("FRIENDS");
 		artists.add("Marshmello");
 		
-		int choice = 0;
 		//Prints Library of all songs
 		for(int i = 0; i < allSongs.size(); i++) {//Prints all songs
 			System.out.println(i + " " + allSongs.get(i) + " " + artists.get(i));
 		}//end for
+		
+		boolean flag = true; 	
 		do {
 		System.out.println();
 		System.out.println("1. Add to Library \n"
@@ -34,7 +35,7 @@ public class DS6 {
 		System.out.println();
 	
 		Scanner input = new Scanner(System.in);
-		int choice1 = input.nextInt();		
+		int choice1 = input.nextInt();	
 		
 		switch(choice1) {
 		case 1:
@@ -51,6 +52,7 @@ public class DS6 {
 			int delete = input.nextInt();
 			allSongs.remove(delete);
 			artists.remove(delete);
+			System.out.println();
 			break;
 			
 		case 3:
@@ -60,6 +62,7 @@ public class DS6 {
 			
 		case 4:
 			System.out.println("Bye");
+			flag = false;
 			break;
 			
 		default:
@@ -69,7 +72,7 @@ public class DS6 {
 		for(int i = 0; i < allSongs.size(); i++) {//Prints all songs
 			System.out.println(i + " " + allSongs.get(i) + " " + artists.get(i));
 		}//end for
-		}while(choice != 4);
+		}while(flag);
 
 
 	}//end main
