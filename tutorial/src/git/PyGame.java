@@ -1,4 +1,4 @@
-package workstuff;
+package git;
 import java.util.Random;
 //imports randint from random
 import java.util.ArrayList;
@@ -813,7 +813,6 @@ public class PyGame {
 		      // calls the function knockknock() to go to it.
 		    }
 		  }
-		
 		 
 		public static void Bustdoor() {
 		// public static voidines the function Bustdoor():
@@ -1070,7 +1069,7 @@ public class PyGame {
 		  }
 		}
 		    
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 		System.out.println ("This game will be based on your choices.");
 		// System.out.printlns "This game will be based on your choices."
 		System.out.println ("Choose Wisely.");
@@ -1079,5 +1078,4 @@ public class PyGame {
     	// calls the function YourRoom() which untimately starts the whole game
 
 	}//end main
-
 }
