@@ -36,6 +36,7 @@ public class Rect {
 			y += yMove;
 		}
 		
+		@Override
 		public String toString() {
 			return "x: " + x + " y: " + y + " l: " + length + " w: " + width;
 		}
