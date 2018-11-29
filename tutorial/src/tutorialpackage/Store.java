@@ -139,10 +139,10 @@ public class Store {
 		
 		System.out.println("You bought: " + totalQty + " items");	// Prints the user the overall thing they bought
 		System.out.println("Your total cost is: $" + Price + " CAD");	// Prints out the total cost
-		System.out.printf("Tax is: %.2f \n", + calcTax(Tax, Price));	// Prints out the tax
+		System.out.printf("Tax is: " + "$%.2f \n", + calcTax(Tax, Price));	// Prints out the tax
 		
 		double totalPrice = calcTax(Tax, Price) + Price;	// This will be adding the price and the tax
-		System.out.printf("Total with tax is: %.2f \n", totalPrice);	// Prints the user the total price with tax
+		System.out.printf("Total with tax is: " + "$%.2f \n", totalPrice);	// Prints the user the total price with tax
 		System.out.println("Thanks for shopping at Danny's Computer Shop, Good Bye!");	// Prints out Goodbye to the customer
 	}
 	public static void main(String[] args) {	// Runs everything

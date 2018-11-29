@@ -2,7 +2,7 @@ package tutorialpackage;
 import java.util.Scanner;
 public class HangmanProper {
 
-	private static String[] words = {"dictionary", "jacket", "shirt", "glasses", "juice", "water"};
+	private static String[] words = {"dictionary", "jacket", "shirt", "glasses", "juice", "water", "cake", "blank"};
 	private static String word = words[(int) (Math.random() * words.length)];
 	private static String dash = new String(new char[word.length()]).replace("\0", "-");
 	private static int count = 0;
