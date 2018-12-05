@@ -9,14 +9,16 @@ public class Customer {
 	private String secretLairLocation;
 	private String Name;
 	private double evilFunds;
+	public double amount;
 	
 	public Customer() {
 		secretLairLocation = " ";
 		Name = " ";
-		evilFunds = 0.0;
+		evilFunds = 0;
+		amount = 0;
 	}
 	
-	public Customer(String secretLairLocation, String Name, double evilFunds) {
+	public Customer(String secretLairLocation, String Name, double evilFunds, double amount) {
 		this.secretLairLocation = secretLairLocation;
 		this.Name = Name;
 		this.evilFunds = evilFunds;
@@ -28,6 +30,6 @@ public class Customer {
 	
 	//adds funds to customer’s evilFunds
 	public void addFunds(double evilFunds) {
-		this.evilFunds = evilFunds; 
+		this.evilFunds = evilFunds + amount;
 	}
 }
