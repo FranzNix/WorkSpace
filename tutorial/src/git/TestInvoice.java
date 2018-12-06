@@ -9,7 +9,7 @@ public class TestInvoice {
 		// make sure in at least one of the runs the customer can not afford the purchase
 				
 				//invoice run 1
-				Customer c = new Customer("island", "Dr evil", 1230.0);
+				Customer c = new Customer("Island", "Dr. Evil", 1230.0);
 				Invoice in = new Invoice(c);
 				in.addToOrder(new Product("flame Thower",123.80), 3);
 				in.addToOrder(new Product("sharks", 105.2),2);

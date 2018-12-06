@@ -19,7 +19,7 @@ public class LineItem {
 	}
 	
 	public String toString() {
-		return "Quantity: " + qty + " Product: " + theProduct;
+		return "Product " + theProduct+ "; Quantity: " + qty;
 	}
 
 }

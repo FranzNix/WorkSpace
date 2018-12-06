@@ -6,15 +6,16 @@ import java.util.ArrayList;
 public class Invoice {
 	
 	private Customer theCustomer;
-	private ArrayList<LineItem> Item = new ArrayList<>(); 
-	double amountDue = 0;
+	private ArrayList<LineItem> item = new ArrayList<>(); 
 	
-	public Invoice(Customer theCustomer, LineItem Item) {
+	public Invoice(Customer theCustomer) {
+		this.theCustomer = theCustomer;
 
 	}
 	
 	//creates a new lineItem and adds the new lineItem to the items ArrayList
 	public void addToOrder(Product theProduct , int qty ) {
+		item.add(new LineItem(theProduct, qty));
 		
 	}//ends addToOrder
 	
@@ -33,6 +34,7 @@ public class Invoice {
 	
 	//returns the total amount due for this order
 	public double amountDue() {
+		return amountDue();
 		
 	}//end amountDue
 	

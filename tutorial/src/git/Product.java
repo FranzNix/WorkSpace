@@ -10,7 +10,7 @@ public class Product {
 	private double price;
 	
 	public Product() {
-		name = " ";
+		name = "null";
 		price = 0;
 	}
 	
@@ -18,8 +18,24 @@ public class Product {
 		this.name = name;
 		this.price = price;
 	}
-
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	public void totalPrice(Product theProduct) {
+		theProduct.setPrice(price *)
+	}
+	
 	public String toString() {
-		return "Name: " + name + " Price: " + price;
+		return "Name: " + name + "; Price: $" + price;
 	}
 }

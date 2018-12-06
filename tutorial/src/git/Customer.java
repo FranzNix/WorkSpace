@@ -5,31 +5,36 @@ package git;
  *
  */
 public class Customer {
-
-	private String secretLairLocation;
 	private String Name;
+	private String secretLairLocation;
 	private double evilFunds;
-	public double amount;
 	
 	public Customer() {
-		secretLairLocation = " ";
-		Name = " ";
+		Name = "null";
+		secretLairLocation = "null";
 		evilFunds = 0;
-		amount = 0;
 	}
 	
-	public Customer(String secretLairLocation, String Name, double evilFunds, double amount) {
-		this.secretLairLocation = secretLairLocation;
+	public Customer(String Name, String secretLairLocation, double evilFunds) {
 		this.Name = Name;
+		this.secretLairLocation = secretLairLocation;
 		this.evilFunds = evilFunds;
-	}
-	
-	public String toString() {
-		return "Name: " + Name + " Secret Lair Location: " + secretLairLocation + " Evil Funds: " + evilFunds;
 	}
 	
 	//adds funds to customer’s evilFunds
 	public void addFunds(double evilFunds) {
-		this.evilFunds = evilFunds + amount;
+		this.evilFunds = evilFunds;
+	}
+	
+	public void setEvilFunds(double evilFunds) {
+		this.evilFunds = evilFunds;
+	}
+	
+	public double getEvilFunds() {
+		return evilFunds;
+	}
+	
+	public String toString() {
+		return "Name: " + Name + "; Lair Location: " + secretLairLocation + "; Funds: $" + evilFunds;
 	}
 }
