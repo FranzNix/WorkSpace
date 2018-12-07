@@ -6,7 +6,7 @@ public class CustomerTest {
 		// TODO Auto-generated method stub
 		Customer theCustomer = new Customer();
 		System.out.println(theCustomer.toString());
-		Customer theCustomer1 = new Customer("Joseph", "Basement", 56);
+		Customer theCustomer1 = new Customer("Basement", "Joseph", 56);
 		System.out.println(theCustomer1.toString());
 		
 		System.out.println();

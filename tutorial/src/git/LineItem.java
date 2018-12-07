@@ -18,6 +18,14 @@ public class LineItem {
 		this.theProduct = theProduct;
 	}
 	
+	public int getQty() {
+		return qty;
+	}
+	
+	public Product getTheProduct() {
+		return theProduct;
+	}
+	
 	public String toString() {
 		return "Product " + theProduct+ "; Quantity: " + qty;
 	}
