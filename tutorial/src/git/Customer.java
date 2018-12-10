@@ -13,7 +13,7 @@ public class Customer {
 		Name = "null";
 		secretLairLocation = "null";
 		evilFunds = 0;
-	}//ends Custome
+	}//ends Customer
 	
 	public Customer(String secretLairLocation, String Name, double evilFunds) {
 		this.secretLairLocation = secretLairLocation;
