@@ -72,4 +72,4 @@ public class Invoice {
 		return totalPrice;
 		
 	}//end amountDue
-}
+}//ends Invoice
