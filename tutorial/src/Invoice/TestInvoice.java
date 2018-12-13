@@ -1,4 +1,4 @@
-package git;
+package Invoice;
 
 public class TestInvoice {
 

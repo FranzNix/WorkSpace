@@ -1,4 +1,5 @@
-package git;
+package Invoice;
+
 /**
  * 
  * @author FrancisM4
