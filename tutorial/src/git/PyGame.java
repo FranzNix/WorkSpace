@@ -1060,8 +1060,8 @@ public class PyGame {
 		    // System.out.printlns "Come on it's the end of the game."
 		    //sleep(2)
 		    // //sleeps the program for 2 seconds
-		    System.out.println ("And you still don't understand enter 1 or 2. Jeeze.");
-		    // System.out.printlns "And you still don't understand enter 1 or 2. Jeeze."
+		    System.out.println ("And you still don't understand enter 1 or 2. Jeez.");
+		    // System.out.printlns "And you still don't understand enter 1 or 2. Jeez."
 		    //sleep(3)
 		    // //sleeps the program for 3 seconds
 		    Endgame();
